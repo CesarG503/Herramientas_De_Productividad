@@ -1,0 +1,24 @@
+.container{
+
+    max-width: 80%;
+    margin: auto;
+    text-align: justify
+}
+.tabla_semantica{
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.tabla_semantica td
+{
+    width: 100%;
+    padding: 1rem;
+   
+}
+
+.Etiquetas{
+    color: cadetblue;
+}
