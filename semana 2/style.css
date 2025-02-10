@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    
+    box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.177);
+}
+
+.card{
+    width: 80%;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 10px;
+    background-color: rgba(112, 210, 14, 0.25);
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.422); /*boxs shadow: (4 dimensiones), color */
+
+}
+
+
+.box{
+    width: 100px;
+    height: 100px; /* lo alto y ancho es es tamaño del contenido */
+    background: cyan;
+    border: 10px solid blue; /* border: grosor, (tipo de traso), color */
+    padding: 10px; /* tamaño interior empieza despues del contenido*/
+    margin: 10px; /* tamaño exterior de la caja */
+
+
+    box-sizing:border-box;
+
+    /*
+    box-sizing: content-box; es el valor por defecto (tamaño del contenido + pagging)
+
+    box-sizing: border-box; solo el valor del contenido
+
+    box-sizing: inherit; El elemento hereda el valor de box-sizing de su elemento padre.
+    */
+}
