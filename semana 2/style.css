@@ -70,3 +70,77 @@ img
     box-sizing: border-box; /* tamaño maximo 200px */
     
 }
+
+/* ########### display ##################*/
+
+
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    margin: 1rem;
+    /*
+    Tipos de display en CSS:
+
+    1. display: none;
+        - Oculta el elemento, no ocupa espacio en el diseño.
+
+    2. display: block;
+        - El elemento se comporta como un bloque, ocupando todo el ancho disponible.
+
+    3. display: inline;
+        - El elemento se comporta como un elemento en línea, ocupando solo el espacio necesario.
+
+    4. display: inline-block;
+        - Combina características de inline y block, permitiendo definir dimensiones pero manteniéndose en línea.
+
+    5. display: flex;
+        - Define un contenedor flexible, permitiendo la alineación y distribución de elementos hijos.
+
+    6. display: inline-flex;
+        - Similar a flex, pero el contenedor se comporta como un elemento en línea.
+
+    7. display: grid;
+        - Define un contenedor de cuadrícula, permitiendo la alineación y distribución de elementos hijos en filas y columnas.
+
+    8. display: inline-grid;
+        - Similar a grid, pero el contenedor se comporta como un elemento en línea.
+
+    9. display: table;
+        - El elemento se comporta como una tabla HTML.
+
+    10. display: table-row;
+         - El elemento se comporta como una fila de tabla.
+
+    11. display: table-cell;
+         - El elemento se comporta como una celda de tabla.
+
+    12. display: table-column;
+         - El elemento se comporta como una columna de tabla.
+
+    13. display: table-column-group;
+         - El elemento se comporta como un grupo de columnas de tabla.
+
+    14. display: table-footer-group;
+         - El elemento se comporta como un grupo de pie de tabla.
+
+    15. display: table-header-group;
+         - El elemento se comporta como un grupo de encabezado de tabla.
+
+    16. display: table-row-group;
+         - El elemento se comporta como un grupo de filas de tabla.
+
+    17. display: table-caption;
+         - El elemento se comporta como una leyenda de tabla.
+
+    18. display: list-item;
+         - El elemento se comporta como un elemento de lista.
+
+    19. display: run-in;
+         - El elemento se comporta como un bloque o en línea, dependiendo del contexto.
+
+    20. display: contents;
+         - Hace que los hijos del elemento se comporten como si fueran hijos directos
+    */
+    display: inline-block;
+}
