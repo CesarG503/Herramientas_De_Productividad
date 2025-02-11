@@ -8,9 +8,7 @@
     padding: 1rem;
 }
 table{
-    border-collapse: collapse;
-    
-   
+    border-collapse: collapse; /* border collapse para colapsar los bordes por defecto de las tablas */
 }
 th{
     color: white;
@@ -33,7 +31,6 @@ td{
 .second{
     background-color: white;
 }
-
 .comment{
     width: 300px;
 }
