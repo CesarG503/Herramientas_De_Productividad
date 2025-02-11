@@ -37,10 +37,36 @@ body {
     box-sizing:border-box;
 
     /*
-    box-sizing: content-box; es el valor por defecto (tamaño del contenido + pagging)
+    box-sizing: content-box; es el valor por defecto (tamaño del contenido + pagging + margin + borde)
 
-    box-sizing: border-box; solo el valor del contenido
+    box-sizing: border-box; solo el valor del contenido (el paggin, margin etc se agregan dentro del tamaño inicial del contenido)
 
     box-sizing: inherit; El elemento hereda el valor de box-sizing de su elemento padre.
     */
+}
+
+.container-without-background{
+    width: 80%;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.layout
+{
+    width: fit-content; /* este contenido se ajuta a lo qeu contiene */
+    background-color: red;
+    
+}
+
+img
+{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+    background-color: yellow;
+    border: 10px solid green;
+
+    box-sizing: border-box; /* tamaño maximo 200px */
+    
 }
