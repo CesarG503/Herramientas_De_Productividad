@@ -9,10 +9,12 @@
 }
 table{
     border-collapse: collapse; /* border collapse para colapsar los bordes por defecto de las tablas */
+    border-radius: 10px;
+    overflow: hidden;
 }
 th{
     color: white;
-    background-color: rgb(1, 127, 129);
+    background-color: #307980;
     padding: 1rem;
     font-size: 2rem;
     font-weight: 1;
@@ -24,9 +26,13 @@ td{
     color: darkslategrey;
 }
 
+th,td{
+    border: 1px solid #ddd;
+}
+
 .first
 {
-    background-color: rgba(209, 245, 245, 0.515);
+    background-color: #dcf0f1;
 }
 .second{
     background-color: white;
