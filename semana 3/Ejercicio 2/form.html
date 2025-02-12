@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css_formulario.css">
+    <title>Formulario CSS</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Create Account</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label class="required">First name</label>
+                    <input type="text" placeholder="enter your first name" required>
+                </div>
+                <div class="form-group">
+                    <label>Last name</label>
+                    <input type="text" placeholder="enter your last name">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="required">Email</label>
+                <input type="email" placeholder="enter your email" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label class="required">Password</label>
+                    <input type="password" placeholder="enter your password" required>
+                </div>
+                <div class="form-group">
+                    <label class="required">Confirm Password</label>
+                    <input type="password" placeholder="enter your password again" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="male">
+                            Male
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="female">
+                            Female
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Hobbies</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="hobbies" value="music">
+                            Music
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="hobbies" value="sports">
+                            Sports
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="hobbies" value="travel">
+                            Travel
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="hobbies" value="movies">
+                            Movies
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Source of Income</label>
+                    <select>
+                        <option>Employed</option>
+                        <option>Self-Employed</option>
+                        <option>Business</option>
+                        <option>Student</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Income</label>
+                    <input type="range" min="0" max="100" value="20">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Upload Profile Picture</label>
+                    <input type="file" id="profile-pic" accept="image/*">
+                    <label for="profile-pic" class="file-upload">Choose File</label>
+                    <span id="file-chosen">No file chosen</span>
+                </div>
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" value="18" min="0">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Bio</label>
+                <textarea></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Create</button>
+        </form>
+    </div>
+</body>
+</html>
