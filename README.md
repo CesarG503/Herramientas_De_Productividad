@@ -10,6 +10,10 @@ Herramientas De Productividad. Aquí encontrarás información sobre herramienta
 - [tablas](#contenido)
 - [Formularios](#types)
 
+### semana 2 y 3
+- [box model](#box-model)
+- [flex box](#flex-box)
+
 
 ### Extensiones útiles para desarrollo web en VS Code
 
