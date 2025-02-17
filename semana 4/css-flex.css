@@ -49,7 +49,21 @@
     justify-items: center; /* solo Grid (hace lo mosmo que justify-content) */
 
     align-items: center; /* Siempre Alenea los elementos hijos de manera vertical (flex o grid)*/
+}
 
-    
-    
+.new-flex-container{
+    width: 100%;
+    background-color: bisque;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.flex-item-normal{
+    width: 200px;
+    height: 200px;
+    background-color: chocolate;
 }
