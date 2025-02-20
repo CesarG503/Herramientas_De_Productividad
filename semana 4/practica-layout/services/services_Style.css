@@ -15,8 +15,8 @@
 }
 
 .flex-container{
-    width: 80%;
-    height: 92vh;
+    width: 90%;
+    height: fit-content;
 
     margin: auto;
 
@@ -26,9 +26,8 @@
     display: flex;
     flex-wrap: wrap;
 
+    align-content: flex-start;
     justify-content: center;
-    gap: 10px;
-
 }
 
 .title{
@@ -41,22 +40,51 @@
     font-size: 2rem;
     color: white;
     margin-top: 10px;
+    margin-bottom: 1rem;
     
 }
 
 .box-services{
-    width: 200px;
+    width: 100%;
+    max-width: 300px;
     background-color: white;
-    height: 170px;
+
+    padding: 2rem;
+    margin: 0.5rem;
+    height: fit-content;
+
+    border-radius: 5px;
 
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
     align-items: center;
-    border-radius: 5px;
-
 }
+
+.box-services>p{
+    font-size: 0.8rem;
+    color: gray;
+    text-align: center;
+    padding: 5px;
+}
+
+.box-services>h3{
+    text-align: center;
+    padding: 5px;
+    font-size: 1rem;
+}
+.box-services>button{
+    color: white;
+    padding: 0.4rem 2rem;
+    border-radius: 5px;
+    background-color: rgba(37, 34, 34, 0.932);
+
+    margin-top: 1rem ;
+}
+
+
 img{
     width: 60px;
+    height: 60PX;
+    margin: 5px;
 }
