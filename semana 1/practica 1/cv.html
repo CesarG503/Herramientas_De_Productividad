@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .nombre {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .titulo {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        
+        .contacto {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .contacto-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .seccion-item {
+            margin-bottom: 20px;
+        }
+        
+        .seccion-titulo {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        .seccion-subtitulo {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+        
+        .seccion-fecha {
+            color: #95a5a6;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .seccion-descripcion {
+            text-align: justify;
+        }
+        
+        .habilidades {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .habilidad {
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            .nombre {
+                font-size: 2rem;
+            }
+            
+            .contacto {
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="nombre">EJEMPLO CV</h1>
+            <p class="titulo">Desarrollador Web</p>
+            <div class="contacto">
+                <div class="contacto-item">
+                    <span>📧 email@ejemplo.com</span>
+                </div>
+                <div class="contacto-item">
+                    <span>📱 +34 600 123 456</span>
+                </div>
+                <div class="contacto-item">
+                    <span>📍 Madrid, España</span>
+                </div>
+            </div>
+        </header>
+        
+        <section>
+            <h2>Perfil Profesional</h2>
+            <p class="seccion-descripcion">
+                Desarrollador web con más de 5 años de experiencia en diseño y desarrollo de aplicaciones web. 
+                Especializado en HTML, CSS, JavaScript y frameworks modernos. Apasionado por crear experiencias 
+                de usuario intuitivas y atractivas con código limpio y eficiente.
+            </p>
+        </section>
+        
+        <section>
+            <h2>Experiencia Laboral</h2>
+            
+            <div class="seccion-item">
+                <div class="seccion-titulo">Desarrollador Frontend Senior</div>
+                <div class="seccion-subtitulo">Empresa Tecnológica S.L.</div>
+                <div class="seccion-fecha">Enero 2020 - Presente</div>
+                <p class="seccion-descripcion">
+                    Desarrollo de interfaces de usuario para aplicaciones web utilizando HTML5, CSS3 y JavaScript.
+                    Implementación de diseños responsivos y optimización del rendimiento. Colaboración con equipos
+                    de diseño y backend para crear soluciones integrales.
+                </p>
+            </div>
+            
+            <div class="seccion-item">
+                <div class="seccion-titulo">Desarrollador Web</div>
+                <div class="seccion-subtitulo">Agencia Digital Creativa</div>
+                <div class="seccion-fecha">Marzo 2018 - Diciembre 2019</div>
+                <p class="seccion-descripcion">
+                    Desarrollo de sitios web para clientes de diversos sectores. Implementación de diseños
+                    desde cero utilizando HTML, CSS y JavaScript. Mantenimiento y actualización de sitios existentes.
+                </p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Formación Académica</h2>
+            
+            <div class="seccion-item">
+                <div class="seccion-titulo">Grado en Ingeniería Informática</div>
+                <div class="seccion-subtitulo">Universidad Complutense de Madrid</div>
+                <div class="seccion-fecha">2014 - 2018</div>
+                <p class="seccion-descripcion">
+                    Especialización en Desarrollo de Software. Proyecto final: Aplicación web para gestión de proyectos.
+                </p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Habilidades</h2>
+            <div class="habilidades">
+                <span class="habilidad">HTML5</span>
+                <span class="habilidad">CSS3</span>
+                <span class="habilidad">JavaScript</span>
+                <span class="habilidad">React</span>
+                <span class="habilidad">Vue.js</span>
+                <span class="habilidad">Responsive Design</span>
+                <span class="habilidad">Git</span>
+                <span class="habilidad">Node.js</span>
+                <span class="habilidad">SQL</span>
+                <span class="habilidad">Figma</span>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Idiomas</h2>
+            <div class="seccion-item">
+                <div class="seccion-titulo">Español</div>
+                <div class="seccion-subtitulo">Nativo</div>
+            </div>
+            <div class="seccion-item">
+                <div class="seccion-titulo">Inglés</div>
+                <div class="seccion-subtitulo">Nivel C1 - Avanzado</div>
+            </div>
+            <div class="seccion-item">
+                <div class="seccion-titulo">Francés</div>
+                <div class="seccion-subtitulo">Nivel B1 - Intermedio</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
