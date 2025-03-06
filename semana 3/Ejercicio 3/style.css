@@ -9,18 +9,19 @@ body{
     background-color: gray;
 }
 
-.container{
+.contenedor{
     width: 80%;
     max-width: 500px;
     margin: auto;
     background-color: black;
     justify-content: center;
-
 }
-.box-row{
+
+.fila-caja{
     display: flex;
 }
-.box-group{
+
+.grupo-caja{
     flex: 1;
     background-color: rgb(28, 27, 27);
     border: 1px solid rgb(42, 42, 42);
@@ -34,28 +35,29 @@ h1{
     font-weight: 600;
     text-align: center;
 }
+
 b{
     color: orange;
 }
 
-p{color: white;}
-
+p{
+    color: white;
+}
 
 span{
     color: yellow;
 }
 
-.question-group{
+.grupo-pregunta{
     padding: 0px 30px;
     margin-top: 3rem;
     display: flex;
-    justify-content: flex-end ;
+    justify-content: flex-end;
     flex: 1;
     font-weight: 100;
 }
 
-
-.box{
+.caja{
     background-color:rgb(0, 213, 255);
     width: 100%;
     max-width: 370px;
@@ -63,40 +65,34 @@ span{
     height: 200px;
 }
 
-
-
-.box-model {
+.modelo-caja {
     background-color: #40B4E5;
     padding: 20px;
     width: 400px;
     margin: 50px auto;
-  }
+}
 
-  .border-box {
-    
+.caja-borde {
     background-color: #1B365D;
     padding: 20px;
-  }
+}
 
-  .padding-box {
-  
+.caja-relleno {
     background-color: #3978AA;
     padding: 20px;
-  }
+}
 
-  .content-box {
-   
+.caja-contenido {
     background-color: #FF9B5E;
     padding: 20px;
     text-align: center;
     color: white;
     font-family: Arial, sans-serif;
-  }
+}
 
-
-  .label {
+.etiqueta {
     color: white;
     font-family: Arial, sans-serif;
     font-size: 14px;
     margin-bottom: 10px;
-  }
+}
