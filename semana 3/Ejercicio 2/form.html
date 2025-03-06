@@ -4,111 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/css_formulario.css">
-    <title>Formulario CSS</title>
+      <!-- Cesar Alexander Garay Ortez GO22007-->
 </head>
 <body>
-    <div class="form-container">
-        <h1>Create Account</h1>
+    <div class="contenedor-formulario">
+        <h1>Crear Cuenta</h1>
         <form>
-            <div class="form-row">
-                <div class="form-group">
-                    <label class="required">First name</label>
-                    <input type="text" placeholder="enter your first name" required>
+            <div class="fila-formulario">
+                <div class="grupo-formulario">
+                    <label class="requerido">Nombre</label>
+                    <input type="text" placeholder="Ingresa tu nombre" required>
                 </div>
-                <div class="form-group">
-                    <label>Last name</label>
-                    <input type="text" placeholder="enter your last name">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label class="required">Email</label>
-                <input type="email" placeholder="enter your email" required>
-            </div>
-
-            <div class="form-row">
-                <div class="form-group">
-                    <label class="required">Password</label>
-                    <input type="password" placeholder="enter your password" required>
-                </div>
-                <div class="form-group">
-                    <label class="required">Confirm Password</label>
-                    <input type="password" placeholder="enter your password again" required>
+                <div class="grupo-formulario">
+                    <label>Apellido</label>
+                    <input type="text" placeholder="Ingresa tu apellido">
                 </div>
             </div>
 
-            <div class="form-row">
-                <div class="form-group">
-                    <label>Gender:</label>
-                    <div class="radio-group">
-                        <label class="radio-label">
-                            <input type="radio" name="gender" value="male">
-                            Male
+            <div class="grupo-formulario">
+                <label class="requerido">Correo Electrónico</label>
+                <input type="email" placeholder="Ingresa tu correo electrónico" required>
+            </div>
+
+            <div class="fila-formulario">
+                <div class="grupo-formulario">
+                    <label class="requerido">Contraseña</label>
+                    <input type="password" placeholder="Ingresa tu contraseña" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label class="requerido">Confirmar Contraseña</label>
+                    <input type="password" placeholder="Confirma tu contraseña" required>
+                </div>
+            </div>
+
+            <div class="fila-formulario">
+                <div class="grupo-formulario">
+                    <label>Género:</label>
+                    <div class="grupo-radio">
+                        <label class="etiqueta-radio">
+                            <input type="radio" name="genero" value="masculino">
+                            Masculino
                         </label>
-                        <label class="radio-label">
-                            <input type="radio" name="gender" value="female">
-                            Female
+                        <label class="etiqueta-radio">
+                            <input type="radio" name="genero" value="femenino">
+                            Femenino
                         </label>
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="grupo-formulario">
                     <label>Hobbies</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="hobbies" value="music">
-                            Music
+                    <div class="grupo-checkbox">
+                        <label class="etiqueta-checkbox">
+                            <input type="checkbox" name="hobbies" value="musica">
+                            Música
                         </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="hobbies" value="sports">
-                            Sports
+                        <label class="etiqueta-checkbox">
+                            <input type="checkbox" name="hobbies" value="deportes">
+                            Deportes
                         </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="hobbies" value="travel">
-                            Travel
+                        <label class="etiqueta-checkbox">
+                            <input type="checkbox" name="hobbies" value="viajar">
+                            Viajar
                         </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="hobbies" value="movies">
-                            Movies
+                        <label class="etiqueta-checkbox">
+                            <input type="checkbox" name="hobbies" value="cine">
+                            Cine
                         </label>
                     </div>
                 </div>
             </div>
 
-            <div class="form-row">
-                <div class="form-group">
-                    <label>Source of Income</label>
+            <div class="fila-formulario">
+                <div class="grupo-formulario">
+                    <label>Fuente de Ingresos</label>
                     <select>
-                        <option>Employed</option>
-                        <option>Self-Employed</option>
-                        <option>Business</option>
-                        <option>Student</option>
+                        <option>Empleado</option>
+                        <option>Autónomo</option>
+                        <option>Negocio</option>
+                        <option>Estudiante</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label>Income</label>
+                <div class="grupo-formulario">
+                    <label>Ingresos</label>
                     <input type="range" min="0" max="100" value="20">
                 </div>
             </div>
 
-            <div class="form-row">
-                <div class="form-group">
-                    <label>Upload Profile Picture</label>
-                    <input type="file" id="profile-pic" accept="image/*">
-                    <label for="profile-pic" class="file-upload">Choose File</label>
-                    <span id="file-chosen">No file chosen</span>
+            <div class="fila-formulario">
+                <div class="grupo-formulario">
+                    <label>Subir Foto de Perfil</label>
+                    <input type="file" id="foto-perfil" accept="image/*">
+                    <label for="foto-perfil" class="subir-archivo">Elegir Archivo</label>
+                    <span id="archivo-elegido">Ningún archivo elegido</span>
                 </div>
-                <div class="form-group">
-                    <label>Age</label>
+                <div class="grupo-formulario">
+                    <label>Edad</label>
                     <input type="number" value="18" min="0">
                 </div>
             </div>
 
-            <div class="form-group">
-                <label>Bio</label>
+            <div class="grupo-formulario">
+                <label>Biografía</label>
                 <textarea></textarea>
             </div>
 
-            <button type="submit" class="submit-btn">Create</button>
+            <button type="submit" class="btn-enviar">Crear</button>
         </form>
     </div>
 </body>

@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-.form-container {
+.contenedor-formulario {
     background: white;
     padding: 30px;
     border-radius: 10px;
@@ -31,13 +31,13 @@ h1 {
     font-weight: 500;
 }
 
-.form-row {
+.fila-formulario {
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
 }
 
-.form-group {
+.grupo-formulario {
     flex: 1;
 }
 
@@ -65,7 +65,7 @@ input[type="file"] {
     display: none;
 }
 
-.file-upload {
+.subir-archivo {
     display: inline-block;
     padding: 12px 20px;
     background: #f5f5f5;
@@ -74,15 +74,15 @@ input[type="file"] {
     cursor: pointer;
 }
 
-.radio-group,
-.checkbox-group {
+.grupo-radio,
+.grupo-checkbox {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.radio-label,
-.checkbox-label {
+.etiqueta-radio,
+.etiqueta-checkbox {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -99,7 +99,7 @@ textarea {
     resize: vertical;
 }
 
-.submit-btn {
+.btn-enviar {
     background: #66C7AC;
     color: white;
     padding: 12px 30px;
@@ -111,11 +111,11 @@ textarea {
     margin-top: 20px;
 }
 
-.submit-btn:hover {
+.btn-enviar:hover {
     background: #5bb39d;
 }
 
-.required::after {
+.requerido::after {
     content: " *";
     color: #66C7AC;
 }
