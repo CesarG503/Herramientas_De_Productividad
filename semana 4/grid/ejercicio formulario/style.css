@@ -161,3 +161,22 @@ h1 {
         grid-template-columns: 1fr;
     }
 }
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.header-container img {
+    margin-right: 15px;
+}
+
+img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    height: auto;
+
+}
