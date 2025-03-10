@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedido - Pizzería</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>FORMULARIO DE PEDIDO - PIZZERÍA</h1>
+        
+        <form>
+            <div class="product-section">
+                <div class="product-grid">
+                    <div class="header">Producto</div>
+                    <div class="header">Cantidad</div>
+                    <div class="header">Tamaño</div>
+                    <div class="header">Ingredientes adicionales</div>
+                    <div class="header">Notas especiales</div>
+                    
+                    <div class="product-row">
+                        <div data-label="Producto">
+                            <select>
+                                <option value="">Seleccionar...</option>
+                                <option value="pizza-margarita">Pizza Margarita</option>
+                                <option value="pizza-pepperoni">Pizza Pepperoni</option>
+                                <option value="pizza-hawaiana">Pizza Hawaiana</option>
+                                <option value="pizza-vegetariana">Pizza Vegetariana</option>
+                            </select>
+                        </div>
+                        <div data-label="Cantidad">
+                            <input type="number" min="1" value="1">
+                        </div>
+                        <div data-label="Tamaño">
+                            <select>
+                                <option value="pequeña">Pequeña</option>
+                                <option value="mediana">Mediana</option>
+                                <option value="grande">Grande</option>
+                                <option value="familiar">Familiar</option>
+                            </select>
+                        </div>
+                        <div data-label="Ingredientes adicionales">
+                            <input type="text" placeholder="Ej: extra queso, champiñones...">
+                        </div>
+                        <div data-label="Notas especiales">
+                            <textarea rows="2" placeholder="Instrucciones especiales..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="product-row">
+                        <div data-label="Producto">
+                            <select>
+                                <option value="">Seleccionar...</option>
+                                <option value="pizza-margarita">Pizza Margarita</option>
+                                <option value="pizza-pepperoni">Pizza Pepperoni</option>
+                                <option value="pizza-hawaiana">Pizza Hawaiana</option>
+                                <option value="pizza-vegetariana">Pizza Vegetariana</option>
+                            </select>
+                        </div>
+                        <div data-label="Cantidad">
+                            <input type="number" min="1" value="1">
+                        </div>
+                        <div data-label="Tamaño">
+                            <select>
+                                <option value="pequeña">Pequeña</option>
+                                <option value="mediana">Mediana</option>
+                                <option value="grande">Grande</option>
+                                <option value="familiar">Familiar</option>
+                            </select>
+                        </div>
+                        <div data-label="Ingredientes adicionales">
+                            <input type="text" placeholder="Ej: extra queso, champiñones...">
+                        </div>
+                        <div data-label="Notas especiales">
+                            <textarea rows="2" placeholder="Instrucciones especiales..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-title">Datos del Cliente</div>
+            <div class="customer-section">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                
+                <div class="form-group" style="grid-column: 1 / -1;">
+                    <label for="direccion">Dirección de entrega:</label>
+                    <textarea id="direccion" name="direccion" rows="2"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Método de pago:</label>
+                    <div class="payment-method">
+                        <div class="payment-option">
+                            <input type="radio" id="efectivo" name="metodo-pago" value="efectivo" checked>
+                            <label for="efectivo">Efectivo</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="tarjeta" name="metodo-pago" value="tarjeta">
+                            <label for="tarjeta">Tarjeta</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hora-entrega">Hora estimada de entrega:</label>
+                    <input type="time" id="hora-entrega" name="hora-entrega">
+                </div>
+            </div>
+
+            <div class="section-title">Información Adicional</div>
+            <div class="additional-section">
+                <div class="form-group">
+                    <label for="empleado">Nombre del empleado que toma el pedido:</label>
+                    <input type="text" id="empleado" name="empleado">
+                </div>
+                
+                <div class="form-group">
+                    <label for="fecha-hora">Fecha y hora del pedido:</label>
+                    <input type="datetime-local" id="fecha-hora" name="fecha-hora">
+                </div>
+            </div>
+            
+            <button type="submit" style="background-color: var(--primary-color); color: white; border: none; padding: 12px 20px; border-radius: 4px; cursor: pointer; margin-top: 20px; width: 100%;">
+                Enviar Pedido
+            </button>
+        </form>
+    </div>
+</body>
+</html>
