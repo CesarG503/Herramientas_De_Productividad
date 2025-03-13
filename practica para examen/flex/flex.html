@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex layout</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="container-row">
+
+            <div class="group caja-1">
+                <div class="box"></div>
+            </div>
+            <div class="group caja-2">
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="container-row">
+            
+            <div class="group caja-1 flex">
+
+                <div class="container-column">
+                    <div class="box"></div>
+                    <div class="box box-final"></div>
+                </div>
+
+                <div class="container-column">
+                    <div class="box box-1"></div>
+                    <div class="box box-2"></div>
+                </div>
+                    
+            </div>
+
+            <div class="group caja-2">
+                <div class="box caja-larga"></div>
+            </div>
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
