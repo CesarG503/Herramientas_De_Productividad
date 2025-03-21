@@ -1,0 +1,35 @@
+
+
+$main-background: red;
+$negro: black;
+$dia-background: white;
+$dia-color: black;
+
+main {
+    section {
+        background-color: $main-background;
+        color: white;
+
+        article {
+            color: $negro;
+        }
+    }
+}
+
+.container {
+    background-color: white;
+}
+
+@mixin modo-dia {
+    background-color: $dia-background;
+    color: $dia-color;
+}
+
+@mixin modo-noche {
+    background-color: black;
+    color: white;
+}
+
+body {
+    @include modo-dia;
+}

@@ -1,0 +1,16 @@
+main section {
+  background-color: red;
+  color: white;
+}
+main section article {
+  color: black;
+}
+
+.container {
+  background-color: white;
+}
+
+body {
+  background-color: white;
+  color: black;
+}/*# sourceMappingURL=css.css.map */
