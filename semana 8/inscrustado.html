@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div Incrustado</title>
+  <style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+}
+
+
+body {
+    background: #ffffff;
+    font-family: sans-serif;
+}
+
+
+.container {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    margin: 50px auto;
+
+
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 80px 40px;
+    margin: 0 30px;
+
+    position: relative;
+    width: 300px;
+}
+
+.one {
+    box-shadow: -30px 30px 30px rgba(0, 0, 0, 0.3);
+}
+
+.two:before {
+    /* box-shadow: -30px 30px 30px rgba(0, 0, 0, 0.3); */
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 10%;
+    width: 90%;
+    height: 50px;
+    background: rgba(255, 234, 234, 0.3);
+    transform: skewY(5deg);
+    transform-origin: left;
+    z-index: -1;
+    filter: blur(2px);
+}
+
+
+.three:before {
+    /* box-shadow: -30px 30px 30px rgba(0, 0, 0, 0.3); */
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 90%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    transform: skewY(-7deg);
+    transform-origin: right;
+    z-index: -1;
+    filter: blur(2px);
+}
+
+.four:after {
+    /* box-shadow: -30px 30px 30px rgba(0, 0, 0, 0.3); */
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 5%;
+    width: 90%;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    /* transform: skewY(-7deg); */
+    /* transform-origin: right; */
+    filter: blur(10px);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+.six {
+    background: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.1),
+                15px 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+.seven {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: -15px -15px 15px rgba(221, 195, 195, 0.1),
+                15px 15px 15px rgba(207, 205, 205, 0.5),
+                inset -50px -50px 50px rgba(246, 242, 242, 0.1),
+                inset 50px 50px 50px rgba(196, 194, 194, 0.5);
+    transition: all 0.3s ease;
+}
+
+.seven:hover {
+    background: linear-gradient(145deg, #ffffff, #fffefe);
+    border-radius: 15px;
+    box-shadow: -20px -20px 25px rgba(255, 255, 255, 0.2),
+                20px 20px 25px rgba(0, 0, 0, 0.6),
+                inset -10px -10px 15px rgba(255, 255, 255, 0.1),
+                inset 10px 10px 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+  </style>
+</head>
+<body>
+
+
+    <div class="container">
+
+
+        <div class="card seven">
+            Este div parece incrustado en la pantalla.
+          </div>
+        
+    </div>
+
+</body>
+</html>
