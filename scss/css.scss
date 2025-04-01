@@ -1,0 +1,73 @@
+//variables
+$primary: #3498db;
+$principal: #000;
+
+$secondary: #2ecc71;
+$tertiary: #e74c3c;
+$quaternary: #9b59b6;
+$quinary: #34495e;
+$senary: #f1c40f;
+$septenary: #e67e22;
+$octonary: #2c3e50;
+$nonary: #95a5a6;
+
+
+@use 'modulo';
+@import 'modulo';
+
+//mixin
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+body{
+
+    background-color: $principal;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+//anidacion de selectores
+.container{
+    @include flex-center(column, center, center); //include: sirve para incluir el mixin
+    width: 100%;
+    height: 100vh;
+    background-color: $primary;
+
+    p{
+        font-size: 10px;
+        color: $secondary;
+    }
+}
+
+@mixin cajaPersonalizada($fondo: white){
+    background-color: $fondo;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.caja{
+    @include cajaPersonalizada($primary);
+    margin-top: 1rem;
+    width: 100%;
+   
+    height: 100px;
+    max-width: 300px;
+    box-sizing: border-box;
+
+}
+//operadores
+
+.caja{
+    max-width: 100px + 250px;
+    height: (50px * 2) + 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5 + 0.2);
+    font-size: 16px / 2;
+    padding: 10px + (5px * 2);
+}
+
