@@ -17,7 +17,7 @@ body .box {
 }
 
 body {
-  background-color: #000;
+  background-color: #dbdbdb;
   color: #fff;
   font-family: "Arial", sans-serif;
   font-size: 16px;
@@ -54,4 +54,25 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.7);
   font-size: 16px/2;
   padding: 20px;
+  transition: all 0.3s ease;
+}
+.caja:hover {
+  background-color: #2ecc71;
+}
+.caja:active {
+  background-color: #e74c3c;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  border-radius: 30px;
+  background: #e0e0e0;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: #dbdbdb;
+  font-weight: bold;
 }/*# sourceMappingURL=css.css.map */
