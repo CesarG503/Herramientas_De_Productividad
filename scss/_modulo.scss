@@ -13,3 +13,16 @@ body{
         padding: $rem;
     }
 }
+
+@mixin fade-in($duration: 0.5s, $timing: ease-in-out) {
+    animation: fadeIn $duration $timing;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

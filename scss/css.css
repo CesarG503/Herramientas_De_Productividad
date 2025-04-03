@@ -7,15 +7,14 @@ body .box {
   padding: 16px;
 }
 
-body .box {
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  border-radius: 10px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
-  padding: 16px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
 body {
   background-color: #dbdbdb;
   color: #fff;
@@ -75,4 +74,27 @@ body {
   font-size: 20px;
   color: #dbdbdb;
   font-weight: bold;
+}
+
+.card-experto {
+  width: 350px;
+  height: 450px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin: 30px auto;
+}
+.card-experto:hover {
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3), -15px -15px 30px rgba(255, 255, 255, 0.6);
+  transform: scale(1.05);
 }/*# sourceMappingURL=css.css.map */
