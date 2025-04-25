@@ -1,0 +1,57 @@
+// sistema layout alternativo grid 
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(v.$grid-columns, minmax(0, 1fr));
+    align-items: stretch; // Asegura que los elementos hijos crezcan verticalmente si es necesario
+    justify-items: stretch; // Asegura que los elementos hijos crezcan horizontalmente si es necesario
+}
+
+.g-col {
+    overflow: hidden; // Evita que el contenido se salga del contenedor
+    word-wrap: break-word; // Ajusta el texto largo para que no desborde
+    height: auto; // Permite que el contenedor crezca dinámicamente según el contenido
+    min-height: 0; // Asegura que no haya restricciones mínimas de altura
+}
+
+@for $i from 1 through v.$grid-columns {
+    .g-col-#{$i} {
+        grid-column: span #{$i};
+    }
+}
+
+@for $i from 1 through v.$grid-row-columns {
+    .g-row-#{$i} {
+        grid-row: span #{$i};
+    }
+}
+
+
+@each $breakpoint, $value in v.$grid-breakpoints {
+    @media (min-width: $value) {
+        @for $i from 1 through v.$grid-columns {
+            .g-col-#{$breakpoint}-#{$i} { // g-col modificador del grid @media: clases creadas g-col-sm-1 
+                grid-column: span #{$i};
+            }
+        }
+    }
+}
+
+@each $breakpoint, $value in v.$grid-breakpoints {
+    @media (min-width: $value) {
+        @for $i from 1 through v.$grid-row-columns {
+            .g-row-#{$breakpoint}-#{$i} { // g-row modificador del grid @media: clases creadas g-row-sm-1 
+                grid-row: span #{$i};
+            }
+        }
+    }
+}
+
+// gap modificador del row
+@for $i from 0 through 5 {
+
+    .gap-#{$i} {
+        gap: #{$i * 0.25}rem;
+    }
+}
