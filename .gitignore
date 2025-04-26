@@ -1,1 +1,3 @@
 **/.DS_Store
+# La cache que usa sass al compilar
+/dist/
