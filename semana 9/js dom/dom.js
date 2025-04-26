@@ -142,5 +142,21 @@ deleteButton.addEventListener("click", () => {
     }
 });
 
+const inputFilter = document.getElementById('filtrador');
+const listaN = document.querySelector('.list-d');
 
+inputFilter.addEventListener("keyup", () => {
+
+    const busqueda = inputFilter.value.toLowerCase();
+    const items = listaN.querySelectorAll('li');
+
+    items.forEach((item) => {
+        if(item.textContent.toLowerCase().indexOf(busqueda) != -1) {// funcion index of
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+
+});
 
