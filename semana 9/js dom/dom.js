@@ -160,3 +160,28 @@ inputFilter.addEventListener("keyup", () => {
 
 });
 
+
+
+const dragabble = document.getElementById('arrastrable');
+const zona = document.getElementById('zona');
+
+
+dragabble.addEventListener('dragstart', (event)=>
+{
+    setTimeout(() => { //funcion de tiempo
+        dragabble.style.display = 'none';     
+    }, 0);       
+});
+
+zona.addEventListener('dragover', (event)=>
+    {
+        event.preventDefault();     
+});
+
+
+zona.addEventListener('drop', (event)=>
+{
+    dragabble.style.display = 'block';     
+
+    zona.appendChild(dragabble);
+});
