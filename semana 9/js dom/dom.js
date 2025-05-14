@@ -16,6 +16,7 @@ btn.addEventListener('click', () => {
     }else{
         body.classList.add('bg-primary')
         body.classList.remove('bg-secondary')
+        body.className = "god";
 
     }
 
@@ -63,7 +64,7 @@ lista[0].style.background = "#ffcc00"; // propiedad estyle
 lista[0].style.color = "black";
 
 
-ul.removeChild(lista[0]); // se remueve un elemento siempre el padre lyego el hijo
+lista[0].remove; // se remueve un elemento siempre el padre lyego el hijo
 
 
 //eventos
@@ -145,13 +146,16 @@ deleteButton.addEventListener("click", () => {
 const inputFilter = document.getElementById('filtrador');
 const listaN = document.querySelector('.list-d');
 
-inputFilter.addEventListener("keyup", () => {
+inputFilter.addEventListener("input", () => {
 
     const busqueda = inputFilter.value.toLowerCase();
     const items = listaN.querySelectorAll('li');
 
     items.forEach((item) => {
-        if(item.textContent.toLowerCase().indexOf(busqueda) != -1) {// funcion index of
+        Alertas.crearAlerta({titulo: item.textContent.toLocaleLowerCase().indexOf(busqueda)})
+        if(item.textContent.toLowerCase().indexOf(busqueda) != -1) {// fu
+            item.textContent = item.textContent.replace('JavaScrip', 'NICE');
+
             item.style.display = 'block';
         } else {
             item.style.display = 'none';
@@ -159,7 +163,6 @@ inputFilter.addEventListener("keyup", () => {
     });
 
 });
-
 
 
 const dragabble = document.getElementById('arrastrable');

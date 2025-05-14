@@ -61,3 +61,22 @@ function removecolor()
                 }
         }
 }
+
+
+const formL = document.getElementById('form1');
+
+formL.addEventListener('submit', (e)=>{
+
+    e.preventDefault();
+
+    
+
+
+    Alertas.crearAlerta({
+
+    });
+
+
+    formL.reset();
+
+});
