@@ -30,3 +30,17 @@ fetch(urlRand, {
     console.table(carton);
   })
   .catch(error => console.error("Error al obtener los números:", error));
+
+fetch('https://www.randomnumberapi.com/api/v1.0/random?min=1&max=100&count=25')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(response.status);
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log( data);
+      })
+      .catch(error => {
+        console.error( error);
+});
