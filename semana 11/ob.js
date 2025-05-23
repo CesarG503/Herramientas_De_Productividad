@@ -1,3 +1,4 @@
+const fs = require('fs');
 
 const obj = {
   prop: "Propiedad 1",
@@ -66,7 +67,8 @@ fetch(url)
     console.log(data.wind.speed); 
     console.log(data.sys.country); 
     console.log(data.name); 
+
+    fs.writeFileSync('clima.json', JSON.stringify(data, null, 2)); //solo para NODE
+    console.log('Datos guardados en clima.json');
   
   })
-
-  //guardar el js de manera correra legible

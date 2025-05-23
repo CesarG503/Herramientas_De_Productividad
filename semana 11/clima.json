@@ -1,0 +1,44 @@
+{
+  "coord": {
+    "lon": -88.1718,
+    "lat": 13.4804
+  },
+  "weather": [
+    {
+      "id": 803,
+      "main": "Clouds",
+      "description": "broken clouds",
+      "icon": "04d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 299.68,
+    "feels_like": 299.68,
+    "temp_min": 299.68,
+    "temp_max": 299.68,
+    "pressure": 1012,
+    "humidity": 74,
+    "sea_level": 1012,
+    "grnd_level": 980
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 0.73,
+    "deg": 30,
+    "gust": 1.22
+  },
+  "clouds": {
+    "all": 77
+  },
+  "dt": 1748003927,
+  "sys": {
+    "country": "SV",
+    "sunrise": 1747999513,
+    "sunset": 1748045642
+  },
+  "timezone": -21600,
+  "id": 3583446,
+  "name": "San Miguel",
+  "cod": 200
+}
