@@ -47,24 +47,26 @@ obtener(2).then((result) => { //async await
 
 
 
-const apiKey = "c84fbce10d6e031f9be2bda98b31623b"; // Reemplaza con tu nueva clave API
+const apiKey = "c84fbce10d6e031f9be2bda98b31623b"; 
 
-const lat = 13.4451; // ejemplo de latitud
-const lon = -88.1822; // ejemplo de longitud
+const lat = 13.48039; 
+const lon = -88.17181; 
 
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
 
 
 fetch(url)
-  .then(response => {
-    return response.json();
-  })
+  .then(response => {return response.json();})
   .then(data => {
-    console.log(data)
-  })
-  .catch(error => {
-    console.error("Error al obtener el clima:", error.message);
-  });
+    //console.log(data)
 
+    console.log(data.coord.lat); 
+    console.log(data.weather[0].description); 
+    console.log(data.main.temp); 
+    console.log(data.wind.speed); 
+    console.log(data.sys.country); 
+    console.log(data.name); 
+  
+  })
 
   //guardar el js de manera correra legible
