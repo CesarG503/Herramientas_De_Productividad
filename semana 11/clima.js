@@ -37,11 +37,12 @@ fetch(url)
     const texto = document.createElement('p');
 
     titulo.innerText = data.name;
-    temperatura.innerText = data.main.temp + ' C';
+    const tempCelsius = (data.main.temp - 273.15).toFixed(2);
+    temperatura.innerText = tempCelsius + ' °C';
 
     texto.innerText = data.sys.country + "\n" + "";
 
-    temperatura.className ="bg-warning-neon hover-neon estilo-brillo text-alert";
+    temperatura.className ="bg-info-neon hover-neon estilo-brillo text-white-neon p-2 text-center";
 
     contenido.appendChild(titulo);
     contenido.appendChild(temperatura);
