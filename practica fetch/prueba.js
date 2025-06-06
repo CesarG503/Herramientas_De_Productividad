@@ -1,10 +1,11 @@
+const url = 'https://jsonplaceholder.typicode.com';
 
 
 async function main(){
 
-    const url = 'https://jsonplaceholder.typicode.com/users';
-    const result = await fetch(url);
+    const result = await fetch(url + '/users');
     const data = await result.json();
+    const data1 = data.slice(0,5)
 
     const ol = document.createElement('ol')
 
@@ -23,15 +24,15 @@ async function main(){
 main()
 
 
-    const button = document.createElement('button')
-    button.textContent = 'click'
+const button = document.createElement('button')
+button.textContent = 'click'
 
-    const input = document.createElement('input')
-    input.placeholder = "Ingresar el nuevo Usuario";
+const input = document.createElement('input')
+input.placeholder = "Ingresar el nuevo Usuario";
 
 
-    document.body.appendChild(button)
-    document.body.appendChild(input)
+document.body.appendChild(button)
+document.body.appendChild(input)
 
 
 button.addEventListener('click', ()=>{
@@ -53,4 +54,4 @@ button.addEventListener('click', ()=>{
         input.value = '';
     }
 
-    });
+});
