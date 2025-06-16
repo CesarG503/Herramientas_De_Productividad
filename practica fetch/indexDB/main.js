@@ -39,6 +39,10 @@ async function load() {
 }
 
 
+
+
+
+
 async function eliminar(id){
 
     const result = await fetch(url+ `/${id}`, {method:'DELETE'})
@@ -119,3 +123,73 @@ buscador.oninput = ()=>{
 
 
 document.body.append(buscador)
+
+
+
+
+let db;
+
+function iniciar_db(){
+
+    const guardar = document.getElementById('button')
+
+    guardar.onclick = ()=>{ guardar()}
+
+
+    const request = indexedDB.open('datos') 
+
+    request.addEventListener('error', error)
+    request.addEventListener('success', start)
+    request.addEventListener('upgradeneeded', crear_db)
+}
+
+function start(evento)
+{
+    db = evento.target.result;
+}
+
+function error(evento)
+{
+    alert('error')
+}
+
+function crear_db(evento)
+{
+    var db = evento.target.result;
+    var almacen = db.createObjectStore('Contactos', {keyPath: 'id'})
+    almacen.createIndex('BuscarNombre','nombre',{unique:false})
+}
+
+ 
+async function guardar(evento) 
+{
+    const datos = await load();
+
+    const N = datos[0].name
+    const I = datos[0].id
+    const E = datos[0].goti
+
+    
+}
+
+window.addEventListener('load', iniciar_db())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
